@@ -1,0 +1,350 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+  html {
+    overflow-y: scroll;
+  }
+
+  body {
+    color : white;
+    /*padding-top: 50px;*/
+    padding-bottom: 20px;
+    background-image: url('img/dirt.png');
+
+  }
+
+  p{
+    color:white;
+  }
+
+  hr{
+    width: 50%;
+  }
+
+  .about-me{
+    width: 70%;
+    transform: translateX(20%);
+  }
+
+  h4 a{
+    color : #DDD;
+  }
+
+  #contact-bar{
+    width: 30%;
+    margin-right: 0;
+  }
+
+  .col-md-offset-1dot5{
+    margin-left: 12.5%;
+  }
+
+  .portfolio{
+    /*margin-top: 100px;*/
+  }
+
+  .floating-img {
+    float: left;
+    margin: 10px 10px 0 0;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-shape-outside: circle();
+    shape-outside: circle();
+  }
+
+  .spinner {
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+
+  .cube1, .cube2 {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+    animation: sk-cubemove 1.8s infinite ease-in-out;
+  }
+
+  .cube2 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+
+  @-webkit-keyframes sk-cubemove {
+    25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+    50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+    75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+    100% { -webkit-transform: rotate(-360deg) }
+  }
+
+  @keyframes sk-cubemove {
+    25% {
+      transform: translateX(42px) rotate(-90deg) scale(0.5);
+      -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+      } 50% {
+        transform: translateX(42px) translateY(42px) rotate(-179deg);
+        -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+        } 50.1% {
+          transform: translateX(42px) translateY(42px) rotate(-180deg);
+          -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+          } 75% {
+            transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+            -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+            } 100% {
+              transform: rotate(-360deg);
+              -webkit-transform: rotate(-360deg);
+            }
+          }
+          </style>
+          <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+          <link rel="stylesheet" href="css/main.css">
+          <link rel="stylesheet" href="css/please-wait.css">
+          <link rel="stylesheet" href="css/apercu.css" type="text/css" charset="utf-8" />
+          <!-- <link rel="stylesheet" href="/fonts/icomoon/style.css" /> -->
+          <link rel="stylesheet" href="https://i.icomoon.io/public/temp/e188313e0e/UntitledProject/style.css">
+
+          <script src="js/shapes-polyfill.js"></script>
+          <script src="js/please-wait.js"></script>
+          <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        </head>
+        <body>
+          <script>
+          (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://assets.gfycat.com/gfycat.js";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'gfycat-js'));
+          </script>
+
+          <script type="text/javascript">
+          var event = new Event('unityload');
+          window.unityload = event;
+
+          var loading_screen = pleaseWait({
+            backgroundColor: '#333',
+            logo: "img/logo.png",
+            loadingHtml : '<div class="spinner"><div class="cube1"></div><div class="cube2"></div></div>'
+          });
+
+          document.body.addEventListener('unityload', function (e) {
+
+            var width = $(window).width();
+            $('canvas').attr('width', width + 'px');
+            $('canvas').attr('height', (width * 4.5/16) + 'px');
+            setTimeout(function(){
+              loading_screen.finish();
+            }, 500);
+
+          }, false);
+
+          </script>
+
+
+
+          <canvas class="emscripten center-block" id="canvas" oncontextmenu="event.preventDefault()" height="540px" width="960px"></canvas>
+          <br/>
+          <div class="container portfolio">
+            <h1 class="text-center">My Work</h1>
+            <br/>
+
+            <!-- Example row of columns -->
+            <div class="row">
+              <div class="col-md-3 col-md-offset-1dot5">
+                <a href="#">
+                  <img class="img-responsive" src="img/pentagod.gif" alt="">
+                </a>
+                <h4>
+                  <a href="#">PENTAGOD</a>
+                </h4>
+
+              </div>
+              <div class="col-md-3">
+                <a href="#">
+                  <img class="img-responsive" src="img/sheep.png" alt="">
+                </a>
+                <h4>
+                  <a href="#">Sheep Hoarders</a>
+                </h4>
+
+              </div>
+              <div class="col-md-3">
+                <a data-toggle="modal" href="#parcademodal">
+                  <img class="img-responsive" src="img/parcade.png" alt="">
+                </a>
+                <h4>
+                  <a data-toggle="modal" href="#parcademodal">PARCADE</a>
+                </h4>
+              </div>
+            </div>
+            <div class="row" style="margin-top:25px;">
+              <div class="col-md-3 col-md-offset-1dot5">
+                <a href="#">
+                  <img class="img-responsive" src="img/dataminer.gif" alt="">
+                </a>
+                <h4>
+                  <a href="#">Dataminer</a>
+                </h4>
+              </div>
+              <div class="col-md-3">
+                <a data-toggle="modal" href="#twitchmodal">
+                  <img class="img-responsive" src="img/twitch.gif" alt="">
+                </a>
+                <h4>
+                  <a data-toggle="modal" href="#twitchmodal">Twitch Plays Tamagotchi</a>
+                </h4>
+              </div>
+            </div>
+
+            <br/>
+
+            <hr/>
+            <br/>
+            <h1 class="text-center">About Me</h1>
+            <br/>
+            <p class="about-me">
+              <img src="img/me.png" class="floating-img img-responsive" align="left">Thomas Gauthier-Caron is a programmer interested in playful interaction. Thomas’ works defies the belief that computers are just zeros and ones. While it’s true that they are at their core, they become so much more when you introduce one key variable : people. Computers then become a way to play, to think, to form bonds with each other. This is why a lot of Thomas’ projects features not just human-computer interaction, but human-human interaction. Be it in a multiplayer screen based game, or a game of PONG played with seesaws. With a formation in both Computer Science and Computation Arts at Concordia University, Thomas is well positioned to craft powerful computer interactions that can surprise people and subvert expectations.
+            </p>
+
+            <br/>
+
+            <hr id="contact-bar"/>
+
+            <footer class="text-right">
+              <p>Thomas Gauthier-Caron</p>
+              <p><a href="mailto:thomas@badbauds.io">
+                thomas@badbauds.io</a>
+              </p>
+              <img src="img/logothomasgc.png" class="img-responsive pull-right" />
+
+            </footer>
+
+
+            <div class="modal fade" id="parcademodal" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">PARCADE</h4>
+                  </div>
+                  <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sJuBZPaWy2U" frameborder="0" allowfullscreen></iframe>
+                    <p>PARCADE is a transposition of the classic game PONG onto the cityscape. Players are invited to revisit the game in a new and unexpected way. Instead of controlling the game with the traditional PONG controllers, players control the game with seesaws! Two seesaws are placed in front of a projection of the game and control the two paddles, the position of each paddle is mapped to the angle of the seesaws. The two­ player game is then transformed into a four­ player game, 2 vs 2. To win, players have no choice but to cooperate. This a collaborative project made with my brother, he designed the seesaws and did all the hardware. I programmed both the pong game and the microcontrollers in the seesaws.
+                    </p>
+
+                    <p class="game-details">
+                      <span class="icon-users"></span> 4 Players<br/>
+                      <span class="icon-graffitti"></span> Urban Art <br/>
+                    </p>                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="modal fade" id="twitchmodal" role="dialog">
+                <div class="modal-dialog">
+
+
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Twitch Plays Tamagotchi</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                          <div class="item active">
+                            <div class='gfyitem' data-autoplay=true data-id='NippyDefiantHind'></div>
+                          </div>
+                          <div class="item">
+                            <div class='gfyitem' data-autoplay=true data-id='TightPersonalKillifish'></div>
+                          </div>
+                          <div class="item">
+                            <img src="/img/twitchfinger.jpg" alt="...">
+                          </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                      </div> <!-- Carousel -->
+                      <p>
+                        Twitch Plays Tamagotchi is a project Inspired from Twitch Plays Pokémon in which Twitch users can collaboratively control a Tamagotchi. It uses a real physical tamagotchi and not an emulator. I wanted originally to have little motors pressing the buttons, but I found a robotic finger that looked quite nice and I decided to use that instead. But when I received my Tamagotchi I realized the buttons were way too small so I used bigger buttons, whose inputs would be redirected to the Tamagotchi. The Twitch stream ran for a little more than a week and got over 50 000 views and was featured in multiple popular news websites.
+                      </p>
+
+                      <p class="game-details">
+                        <span class="icon-sphere"></span> Social Experiment <br/>
+                        <span class="icon-users"></span> Thousands of players<br/>
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+
+              <script type='text/javascript'>
+              var Module = {
+              TOTAL_MEMORY: 268435456,
+              errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+              compatibilitycheck: null,
+              backgroundColor: "#222C36",
+              splashStyle: "Light",
+              dataUrl: "Release/WebGL.data",
+              codeUrl: "Release/WebGL.js",
+              asmUrl: "Release/WebGL.asm.js",
+              memUrl: "Release/WebGL.mem",
+            };
+          </script>
+          <script src="Release/UnityLoader.js"></script>
+          <script src="js/vendor/bootstrap.min.js"></script>
+
+          <script src="js/main.js"></script>
+        </body>
+        </html>

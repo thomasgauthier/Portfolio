@@ -1,0 +1,24 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+h1{
+  font-family: 'apercu', sans-serif;
+}
+
+p {
+  font-family: 'apercu', sans-serif;
+}
+
+.game-details {
+  font-size: 20px;
+}
+
+.modal, .modal p{
+  color:black;
+  font-family: 'apercu', sans-serif;
+
+}
