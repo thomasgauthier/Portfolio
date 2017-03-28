@@ -22,7 +22,7 @@
     /*padding-top: 50px;*/
     padding-bottom: 20px;
     background-image: url('img/dirt.png');
-
+    /*background-color: #0059C1*/
   }
 
   p{
@@ -126,6 +126,10 @@
           <script src="js/please-wait.js"></script>
           <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
           <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+          <script src="threejs/shader/three.min.js"></script>
+
         </head>
         <body>
           <script>
@@ -142,11 +146,11 @@
           var event = new Event('unityload');
           window.unityload = event;
 
-          var loading_screen = pleaseWait({
-            backgroundColor: '#333',
-            logo: "img/logo.png",
-            loadingHtml : '<div class="spinner"><div class="cube1"></div><div class="cube2"></div></div>'
-          });
+          // var loading_screen = pleaseWait({
+          //   backgroundColor: '#333',
+          //   logo: "img/logo.png",
+          //   loadingHtml : '<div class="spinner"><div class="cube1"></div><div class="cube2"></div></div>'
+          // });
 
           document.body.addEventListener('unityload', function (e) {
 
@@ -163,7 +167,8 @@
 
 
 
-          <canvas class="emscripten center-block" id="canvas" oncontextmenu="event.preventDefault()" height="540px" width="960px"></canvas>
+          <!-- <canvas class="emscripten center-block" id="canvas" oncontextmenu="event.preventDefault()" height="540px" width="960px"></canvas> -->
+          <div id="banner" style="width:100%;"></div>
           <br/>
           <div class="container portfolio">
             <h1 class="text-center">My Work</h1>
@@ -171,24 +176,27 @@
 
             <!-- Example row of columns -->
             <div class="row">
+
+
               <div class="col-md-3 col-md-offset-1dot5">
+                <a data-toggle="modal" href="#juncturemodal">
+                  <!-- <img class="img-responsive" src="img/sheep.png" alt=""> -->
+                  <div class='gfyitem' data-autoplay=true data-id='InsidiousAnimatedBee'></div>
+                </a>
+                <h4>
+                  <a data-toggle="modal" href="#juncturemodal">Juncture</a>
+                </h4>
+              </div>
+
+              <div class="col-md-3">
                 <a href="#">
                   <img class="img-responsive" src="img/pentagod.gif" alt="">
                 </a>
                 <h4>
                   <a href="#">PENTAGOD</a>
                 </h4>
-
               </div>
-              <div class="col-md-3">
-                <a href="#">
-                  <img class="img-responsive" src="img/sheep.png" alt="">
-                </a>
-                <h4>
-                  <a href="#">Sheep Hoarders</a>
-                </h4>
 
-              </div>
               <div class="col-md-3">
                 <a data-toggle="modal" href="#parcademodal">
                   <img class="img-responsive" src="img/parcade.png" alt="">
@@ -200,6 +208,14 @@
             </div>
             <div class="row" style="margin-top:25px;">
               <div class="col-md-3 col-md-offset-1dot5">
+                <a href="#">
+                  <img class="img-responsive" src="img/sheep.png" alt="">
+                </a>
+                <h4>
+                  <a href="#">Sheep Hoarders</a>
+                </h4>
+              </div>
+              <div class="col-md-3">
                 <a href="#">
                   <img class="img-responsive" src="img/dataminer.gif" alt="">
                 </a>
@@ -251,6 +267,9 @@
                   </div>
                   <div class="modal-body">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/sJuBZPaWy2U" frameborder="0" allowfullscreen></iframe>
+                    <p>
+                      2015. Installation game. Personal work. Collaborative.
+                    </p>
                     <p>PARCADE is a transposition of the classic game PONG onto the cityscape. Players are invited to revisit the game in a new and unexpected way. Instead of controlling the game with the traditional PONG controllers, players control the game with seesaws! Two seesaws are placed in front of a projection of the game and control the two paddles, the position of each paddle is mapped to the angle of the seesaws. The two­ player game is then transformed into a four­ player game, 2 vs 2. To win, players have no choice but to cooperate. This a collaborative project made with my brother, he designed the seesaws and did all the hardware. I programmed both the pong game and the microcontrollers in the seesaws.
                     </p>
 
@@ -308,6 +327,7 @@
                           <span class="glyphicon glyphicon-chevron-right"></span>
                         </a>
                       </div> <!-- Carousel -->
+                      <p>2015. Installation. Course work.</p>
                       <p>
                         Twitch Plays Tamagotchi is a project Inspired from Twitch Plays Pokémon in which Twitch users can collaboratively control a Tamagotchi. It uses a real physical tamagotchi and not an emulator. I wanted originally to have little motors pressing the buttons, but I found a robotic finger that looked quite nice and I decided to use that instead. But when I received my Tamagotchi I realized the buttons were way too small so I used bigger buttons, whose inputs would be redirected to the Tamagotchi. The Twitch stream ran for a little more than a week and got over 50 000 views and was featured in multiple popular news websites.
                       </p>
@@ -327,23 +347,72 @@
 
 
 
+              <div class="modal fade" id="juncturemodal" role="dialog">
+                <div class="modal-dialog">
 
-              <script type='text/javascript'>
-              var Module = {
-              TOTAL_MEMORY: 268435456,
-              errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-              compatibilitycheck: null,
-              backgroundColor: "#222C36",
-              splashStyle: "Light",
-              dataUrl: "Release/WebGL.data",
-              codeUrl: "Release/WebGL.js",
-              asmUrl: "Release/WebGL.asm.js",
-              memUrl: "Release/WebGL.mem",
-            };
-          </script>
-          <script src="Release/UnityLoader.js"></script>
-          <script src="js/vendor/bootstrap.min.js"></script>
 
-          <script src="js/main.js"></script>
-        </body>
-        </html>
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Juncture</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                          <div class="item active">
+                            <div class='gfyitem' data-autoplay=true data-id='FlakyMadFrogmouth'></div>
+                          </div>
+                          <div class="item">
+                            <div class='gfyitem' data-autoplay=true data-id='FlawedAgedGalapagosmockingbird'></div>
+                          </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                      </div> <!-- Carousel -->
+                      <p>2017. Game. Ubisoft Game Lab Competition. Collaborative.
+                      </p>
+                      <p>
+                        Juncture is a time-bending game about being friends and pulling off the ultimate heist. Two players try to inflitrate a manor. One player plays a first person stealth game while the other helps him around on a computer screen hacking doors, lasers and guards.
+                      </p>
+
+                      <p class="game-details">
+                        <span class="icon-users"></span> 2 Players<br/>
+                        <span class="icon-network"></span> Online <br/>
+                        <span class="icon-gamepad"></span> Gamepad support
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+
+              <script src="threejs/shader/js/BannerShader.js"></script>
+              <script src="threejs/shader/js/banner.js"></script>
+
+
+              <script src="js/vendor/bootstrap.min.js"></script>
+
+              <script src="js/main.js"></script>
+            </body>
+            </html>
