@@ -120,8 +120,7 @@
           <link rel="stylesheet" href="css/please-wait.css">
           <link rel="stylesheet" href="css/apercu.css" type="text/css" charset="utf-8" />
           <!-- <link rel="stylesheet" href="/fonts/icomoon/style.css" /> -->
-          <link rel="stylesheet" href="https://i.icomoon.io/public/temp/e188313e0e/UntitledProject/style.css">
-
+<link rel="stylesheet" href="fonts/icomoon/style.css">
           <script src="js/shapes-polyfill.js"></script>
           <script src="js/please-wait.js"></script>
           <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -188,12 +187,14 @@
                 </h4>
               </div>
 
+
+
               <div class="col-md-3">
-                <a href="#">
-                  <img class="img-responsive" src="img/pentagod.gif" alt="">
+                <a data-toggle="modal" href="#twitchmodal">
+                  <img class="img-responsive" src="img/twitch.gif" alt="">
                 </a>
                 <h4>
-                  <a href="#">PENTAGOD</a>
+                  <a data-toggle="modal" href="#twitchmodal">Twitch Plays Tamagotchi</a>
                 </h4>
               </div>
 
@@ -208,6 +209,24 @@
             </div>
             <div class="row" style="margin-top:25px;">
               <div class="col-md-3 col-md-offset-1dot5">
+                <a data-toggle="modal" href="#dataminermodal">
+                  <img class="img-responsive" src="img/dataminer.gif" alt="">
+                </a>
+                <h4>
+                  <a data-toggle="modal" href="#dataminermodal">Dataminer</a>
+                </h4>
+              </div>
+
+              <div class="col-md-3">
+                <a data-toggle="modal" href="#pentagodmodal">
+                  <img class="img-responsive" src="img/pentagod.gif" alt="">
+                </a>
+                <h4>
+                  <a data-toggle="modal" href="#pentagodmodal">PENTAGOD</a>
+                </h4>
+              </div>
+
+              <div class="col-md-3">
                 <a href="#">
                   <img class="img-responsive" src="img/sheep.png" alt="">
                 </a>
@@ -215,22 +234,7 @@
                   <a href="#">Sheep Hoarders</a>
                 </h4>
               </div>
-              <div class="col-md-3">
-                <a href="#">
-                  <img class="img-responsive" src="img/dataminer.gif" alt="">
-                </a>
-                <h4>
-                  <a href="#">Dataminer</a>
-                </h4>
-              </div>
-              <div class="col-md-3">
-                <a data-toggle="modal" href="#twitchmodal">
-                  <img class="img-responsive" src="img/twitch.gif" alt="">
-                </a>
-                <h4>
-                  <a data-toggle="modal" href="#twitchmodal">Twitch Plays Tamagotchi</a>
-                </h4>
-              </div>
+
             </div>
 
             <br/>
@@ -277,6 +281,39 @@
                       <span class="icon-users"></span> 4 Players<br/>
                       <span class="icon-graffitti"></span> Urban Art <br/>
                     </p>                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+              <div class="modal fade" id="dataminermodal" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Dataminer</h4>
+                    </div>
+                    <div class="modal-body">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/9qShthsTNYk" frameborder="0" allowfullscreen></iframe>
+                      <p>
+                        2014. Web based game. Course work.
+                      </p>
+                      <p>
+                        Dataminer is a protest game about you guessed it, data mining. The game is a take on Minecraft. Player log in with their Facebook account and mine blocks made up of the faces of other people who logged in. When blocks are mined, they give likes that the players can collect and use to craft personal information. The game shows real information from Facebook that players willingly provide by logging in. This project shows my ability to use APIs and use game design in a critical way.
+                      </p>
+
+                      <p class="game-details">
+                        <span class="icon-html5"></span> Web Based <br/>
+                        <span class="icon-facebook-official"></span> Facebook API
+                      </p>
+                    </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
@@ -347,6 +384,66 @@
 
 
 
+              <div class="modal fade" id="pentagodmodal" role="dialog">
+                <div class="modal-dialog">
+
+
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">PENTAGOD</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div id="carousel-pentagod" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#carousel-pentagod" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel-pentagod" data-slide-to="1"></li>
+                          <li data-target="#carousel-pentagod" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                          <div class="item active">
+                            <img src="https://img.itch.io/aW1hZ2UvMTAxNjYwLzQ3NDQ1Mi5wbmc=/347x500/iI7Usn.png" alt="">
+                          </div>
+                          <div class="item">
+                            <img class="img-responsive" src="https://img.itch.io/aW1hZ2UvMTAxNjYwLzQ3NDQyNS5wbmc=/347x500/SE6cwm.png" alt="">
+                          </div>
+                          <div class="item">
+                            <img class="img-responsive" src="https://img.itch.io/aW1hZ2UvMTAxNjYwLzQ3NDQ1NC5wbmc=/347x500/SMMbUo.png" alt="">
+                          </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-pentagod" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-pentagod" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                      </div> <!-- Carousel -->
+                      <p>2016. Game. Personal work. </p>
+                      <p>
+                        PENTAGOD is a battle arena game inspired by dodgeball and featuring PONG physics. In this fantasy world inhabited by 2D shapes, the only being who is not a square, the Pentagod, organizes a battle to death among the poor square villagers of his kingdom. He takes great pleasure at watching the squares being slayed by a high velocity ball that gets thrown around in the arena. The only way to survive the battle is to perfect your jumping and aiming skills. Hit the ball towards you enemies when it's white, dodge it when it's not your color. May the winner live, hopefully. I did all the programming in this project, including player selection menus. This is a collaborative project.
+                      </p>
+
+                      <p class="game-details">
+                        <span class="icon-users"></span> 4 Players<br/>
+                        <span class="icon-gamepad"></span> Gamepad support
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
               <div class="modal fade" id="juncturemodal" role="dialog">
                 <div class="modal-dialog">
 
@@ -359,11 +456,11 @@
                       <h4 class="modal-title">Juncture</h4>
                     </div>
                     <div class="modal-body">
-                      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <div id="carousel-juncture" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
-                          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                          <li data-target="#carousel-juncture" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel-juncture" data-slide-to="1"></li>
                         </ol>
 
                         <!-- Wrapper for slides -->
@@ -377,10 +474,10 @@
                         </div>
 
                         <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <a class="left carousel-control" href="#carousel-juncture" role="button" data-slide="prev">
                           <span class="glyphicon glyphicon-chevron-left"></span>
                         </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <a class="right carousel-control" href="#carousel-juncture" role="button" data-slide="next">
                           <span class="glyphicon glyphicon-chevron-right"></span>
                         </a>
                       </div> <!-- Carousel -->
