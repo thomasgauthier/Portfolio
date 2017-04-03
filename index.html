@@ -17,12 +17,23 @@
     overflow-y: scroll;
   }
 
+  #montagne{
+    position: absolute;
+    top: 220px;
+    width: 100%;
+    background-image: url("img/montagne.png");
+    height: 520px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+  }
+
   body {
-    color : white;
+    color : black;
     /*padding-top: 50px;*/
     padding-bottom: 20px;
-    background-image: url('img/dirt.png');
-    /*background-color: #0059C1*/
+    /*background-image: url('img/dirt.png');*/
+    background-color: #E5E5E5;
   }
 
   p{
@@ -37,10 +48,10 @@
     width: 70%;
     transform: translateX(20%);
   }
-
+  /*
   h4 a{
-    color : #DDD;
-  }
+  color : black;
+  }*/
 
   #contact-bar{
     width: 30%;
@@ -119,8 +130,8 @@
           <link rel="stylesheet" href="css/main.css">
           <link rel="stylesheet" href="css/please-wait.css">
           <link rel="stylesheet" href="css/apercu.css" type="text/css" charset="utf-8" />
-          <!-- <link rel="stylesheet" href="/fonts/icomoon/style.css" /> -->
-<link rel="stylesheet" href="fonts/icomoon/style.css">
+          <link rel="stylesheet" href="https://i.icomoon.io/public/temp/673073da4e/UntitledProject/style.css">
+          <!-- <link rel="stylesheet" href="fonts/icomoon/style.css"> -->
           <script src="js/shapes-polyfill.js"></script>
           <script src="js/please-wait.js"></script>
           <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -168,6 +179,8 @@
 
           <!-- <canvas class="emscripten center-block" id="canvas" oncontextmenu="event.preventDefault()" height="540px" width="960px"></canvas> -->
           <div id="banner" style="width:100%;"></div>
+          <div id="montagne"></div>
+
           <br/>
           <div class="container portfolio">
             <h1 class="text-center">My Work</h1>
@@ -184,6 +197,9 @@
                 </a>
                 <h4>
                   <a data-toggle="modal" href="#juncturemodal">Juncture</a>
+                  <br/>
+                  <span class="icon-gamepad"></span> Game <br/>
+                  <span class="icon-unity"></span> Unity Programming
                 </h4>
               </div>
 
@@ -194,7 +210,9 @@
                   <img class="img-responsive" src="img/twitch.gif" alt="">
                 </a>
                 <h4>
-                  <a data-toggle="modal" href="#twitchmodal">Twitch Plays Tamagotchi</a>
+                  <a data-toggle="modal" href="#twitchmodal">Twitch Plays Tamagotchi</a> <br/>
+                  <span class="icon-sphere"></span> Social Experiment <br/>
+                  <span class="icon-microcontrollers"></span> Microcontroller programming
                 </h4>
               </div>
 
@@ -203,7 +221,9 @@
                   <img class="img-responsive" src="img/parcade.png" alt="">
                 </a>
                 <h4>
-                  <a data-toggle="modal" href="#parcademodal">PARCADE</a>
+                  <a data-toggle="modal" href="#parcademodal">PARCADE</a> <br/>
+                  <span class="icon-graffitti"></span> Urban Art <br/>
+                  <span class="icon-microcontrollers"></span> Microcontroller programming
                 </h4>
               </div>
             </div>
@@ -213,7 +233,9 @@
                   <img class="img-responsive" src="img/dataminer.gif" alt="">
                 </a>
                 <h4>
-                  <a data-toggle="modal" href="#dataminermodal">Dataminer</a>
+                  <a data-toggle="modal" href="#dataminermodal">Dataminer</a> <br/>
+                  <span class="icon-gamepad"></span> Game <br/>
+                  <span class="icon-html5"></span> HTML5 Programming
                 </h4>
               </div>
 
@@ -222,7 +244,9 @@
                   <img class="img-responsive" src="img/pentagod.gif" alt="">
                 </a>
                 <h4>
-                  <a data-toggle="modal" href="#pentagodmodal">PENTAGOD</a>
+                  <a data-toggle="modal" href="#pentagodmodal">PENTAGOD</a> <br/>
+                  <span class="icon-gamepad"></span> Game <br/>
+                  <span class="icon-unity"></span> Unity Programming
                 </h4>
               </div>
 
@@ -231,7 +255,9 @@
                   <img class="img-responsive" src="img/sheep.png" alt="">
                 </a>
                 <h4>
-                  <a href="#">Sheep Hoarders</a>
+                  <a href="#">Sheep Hoarders</a> <br/>
+                  <span class="icon-gamepad"></span> Game<br/>
+                  <span class="icon-unity"></span> Unity Programming
                 </h4>
               </div>
 
@@ -274,242 +300,257 @@
                     <p>
                       2015. Installation game. Personal work. Collaborative.
                     </p>
-                    <p>PARCADE is a transposition of the classic game PONG onto the cityscape. Players are invited to revisit the game in a new and unexpected way. Instead of controlling the game with the traditional PONG controllers, players control the game with seesaws! Two seesaws are placed in front of a projection of the game and control the two paddles, the position of each paddle is mapped to the angle of the seesaws. The two­ player game is then transformed into a four­ player game, 2 vs 2. To win, players have no choice but to cooperate. This a collaborative project made with my brother, he designed the seesaws and did all the hardware. I programmed both the pong game and the microcontrollers in the seesaws.
+                    <p>PARCADE is a transposition of the classic game PONG onto the cityscape. Instead of controlling the game with the traditional PONG controllers, players control the game with seesaws! Two seesaws are placed in front of a projection of the game and control the two paddles, the position of each paddle is mapped to the angle of the seesaws. The two­ player game is then transformed into a four­ player game, 2 vs 2. To win, players have no choice but to cooperate. This a collaborative project made with my brother, he designed the seesaws and did all the hardware. I programmed both the pong game and the microcontrollers in the seesaws.
                     </p>
 
                     <p class="game-details">
                       <span class="icon-users"></span> 4 Players<br/>
                       <span class="icon-graffitti"></span> Urban Art <br/>
-                    </p>                  </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
+                    </p>
                   </div>
-
-                </div>
-              </div>
-
-
-
-              <div class="modal fade" id="dataminermodal" role="dialog">
-                <div class="modal-dialog">
-
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Dataminer</h4>
-                    </div>
-                    <div class="modal-body">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/9qShthsTNYk" frameborder="0" allowfullscreen></iframe>
-                      <p>
-                        2014. Web based game. Course work.
-                      </p>
-                      <p>
-                        Dataminer is a protest game about you guessed it, data mining. The game is a take on Minecraft. Player log in with their Facebook account and mine blocks made up of the faces of other people who logged in. When blocks are mined, they give likes that the players can collect and use to craft personal information. The game shows real information from Facebook that players willingly provide by logging in. This project shows my ability to use APIs and use game design in a critical way.
-                      </p>
-
-                      <p class="game-details">
-                        <span class="icon-html5"></span> Web Based <br/>
-                        <span class="icon-facebook-official"></span> Facebook API
-                      </p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                   </div>
-
                 </div>
+
               </div>
-
-
-              <div class="modal fade" id="twitchmodal" role="dialog">
-                <div class="modal-dialog">
+            </div>
 
 
 
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Twitch Plays Tamagotchi</h4>
-                    </div>
-                    <div class="modal-body">
-                      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
+            <div class="modal fade" id="dataminermodal" role="dialog">
+              <div class="modal-dialog">
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                          <div class="item active">
-                            <div class='gfyitem' data-autoplay=true data-id='NippyDefiantHind'></div>
-                          </div>
-                          <div class="item">
-                            <div class='gfyitem' data-autoplay=true data-id='TightPersonalKillifish'></div>
-                          </div>
-                          <div class="item">
-                            <img src="img/twitchfinger.jpg" alt="...">
-                          </div>
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Dataminer</h4>
+                  </div>
+                  <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9qShthsTNYk" frameborder="0" allowfullscreen></iframe>
+                    <p>
+                      2014. Web based game. Course work.
+                    </p>
+                    <p>
+                      Dataminer is a protest game about you guessed it, data mining. The game is a take on Minecraft. Player log in with their Facebook account and mine blocks made up of the faces of other people who logged in. When blocks are mined, they give likes that the players can collect and use to craft personal information. The game shows real information from Facebook that players willingly provide by logging in. This project shows my ability to use APIs and use game design in a critical way.
+                    </p>
+
+                    <p class="game-details">
+                      <span class="icon-html5"></span> Web Based <br/>
+                      <span class="icon-facebook-official"></span> Facebook API
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="modal fade" id="twitchmodal" role="dialog">
+              <div class="modal-dialog">
+
+
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Twitch Plays Tamagotchi</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <div class='gfyitem' data-autoplay=true data-id='NippyDefiantHind'></div>
                         </div>
-
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                          <span class="glyphicon glyphicon-chevron-left"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                          <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
-                      </div> <!-- Carousel -->
-                      <p>2015. Installation. Course work.</p>
-                      <p>
-                        Twitch Plays Tamagotchi is a project Inspired from Twitch Plays Pokémon in which Twitch users can collaboratively control a Tamagotchi. It uses a real physical tamagotchi and not an emulator. I wanted originally to have little motors pressing the buttons, but I found a robotic finger that looked quite nice and I decided to use that instead. But when I received my Tamagotchi I realized the buttons were way too small so I used bigger buttons, whose inputs would be redirected to the Tamagotchi. The Twitch stream ran for a little more than a week and got over 50 000 views and was featured in multiple popular news websites.
-                      </p>
-
-                      <p class="game-details">
-                        <span class="icon-sphere"></span> Social Experiment <br/>
-                        <span class="icon-users"></span> Thousands of players<br/>
-                      </p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-
-
-              <div class="modal fade" id="pentagodmodal" role="dialog">
-                <div class="modal-dialog">
-
-
-
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">PENTAGOD</h4>
-                    </div>
-                    <div class="modal-body">
-                      <div id="carousel-pentagod" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                          <li data-target="#carousel-pentagod" data-slide-to="0" class="active"></li>
-                          <li data-target="#carousel-pentagod" data-slide-to="1"></li>
-                          <li data-target="#carousel-pentagod" data-slide-to="2"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                          <div class="item active">
-                            <img src="https://img.itch.io/aW1hZ2UvMTAxNjYwLzQ3NDQ1Mi5wbmc=/347x500/iI7Usn.png" alt="">
-                          </div>
-                          <div class="item">
-                            <img class="img-responsive" src="https://img.itch.io/aW1hZ2UvMTAxNjYwLzQ3NDQyNS5wbmc=/347x500/SE6cwm.png" alt="">
-                          </div>
-                          <div class="item">
-                            <img class="img-responsive" src="https://img.itch.io/aW1hZ2UvMTAxNjYwLzQ3NDQ1NC5wbmc=/347x500/SMMbUo.png" alt="">
-                          </div>
+                        <div class="item">
+                          <div class='gfyitem' data-autoplay=true data-id='TightPersonalKillifish'></div>
                         </div>
-
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-pentagod" role="button" data-slide="prev">
-                          <span class="glyphicon glyphicon-chevron-left"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-pentagod" role="button" data-slide="next">
-                          <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
-                      </div> <!-- Carousel -->
-                      <p>2016. Game. Personal work. </p>
-                      <p>
-                        PENTAGOD is a battle arena game inspired by dodgeball and featuring PONG physics. In this fantasy world inhabited by 2D shapes, the only being who is not a square, the Pentagod, organizes a battle to death among the poor square villagers of his kingdom. He takes great pleasure at watching the squares being slayed by a high velocity ball that gets thrown around in the arena. The only way to survive the battle is to perfect your jumping and aiming skills. Hit the ball towards you enemies when it's white, dodge it when it's not your color. May the winner live, hopefully. I did all the programming in this project, including player selection menus. This is a collaborative project.
-                      </p>
-
-                      <p class="game-details">
-                        <span class="icon-users"></span> 4 Players<br/>
-                        <span class="icon-gamepad"></span> Gamepad support
-                      </p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-
-              <div class="modal fade" id="juncturemodal" role="dialog">
-                <div class="modal-dialog">
-
-
-
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Juncture</h4>
-                    </div>
-                    <div class="modal-body">
-                      <div id="carousel-juncture" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                          <li data-target="#carousel-juncture" data-slide-to="0" class="active"></li>
-                          <li data-target="#carousel-juncture" data-slide-to="1"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                          <div class="item active">
-                            <div class='gfyitem' data-autoplay=true data-id='FlakyMadFrogmouth'></div>
-                          </div>
-                          <div class="item">
-                            <div class='gfyitem' data-autoplay=true data-id='FlawedAgedGalapagosmockingbird'></div>
-                          </div>
+                        <div class="item">
+                          <img src="img/twitchfinger.jpg" alt="...">
                         </div>
+                      </div>
 
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-juncture" role="button" data-slide="prev">
-                          <span class="glyphicon glyphicon-chevron-left"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-juncture" role="button" data-slide="next">
-                          <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
-                      </div> <!-- Carousel -->
-                      <p>2017. Game. Ubisoft Game Lab Competition. Collaborative.
-                      </p>
-                      <p>
-                        Juncture is a time-bending game about being friends and pulling off the ultimate heist. Two players try to inflitrate a manor. One player plays a first person stealth game while the other helps him around on a computer screen hacking doors, lasers and guards.
-                      </p>
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </div> <!-- Carousel -->
+                    <p>2015. Installation. Course work.</p>
+                    <p>
+                      Twitch Plays Tamagotchi is a project Inspired from Twitch Plays Pokémon in which Twitch users can collaboratively control a Tamagotchi. It uses a real physical tamagotchi and not an emulator. I wanted originally to have little motors pressing the buttons, but I found a robotic finger that looked quite nice and I decided to use that instead. But when I received my Tamagotchi I realized the buttons were way too small so I used bigger buttons, whose inputs would be redirected to the Tamagotchi. The Twitch stream ran for a little more than a week and got over 50 000 views and was featured in multiple popular news websites.
+                    </p>
 
-                      <p class="game-details">
-                        <span class="icon-users"></span> 2 Players<br/>
-                        <span class="icon-network"></span> Online <br/>
-                        <span class="icon-gamepad"></span> Gamepad support
-                      </p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
+                    <p class="game-details">
+                      <span class="icon-sphere"></span> Social Experiment <br/>
+                      <span class="icon-users"></span> Thousands of players<br/>
+                    </p>
                   </div>
-
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
                 </div>
+
               </div>
+            </div>
 
 
 
+            <div class="modal fade" id="pentagodmodal" role="dialog">
+              <div class="modal-dialog">
 
-              <script src="threejs/shader/js/BannerShader.js"></script>
-              <script src="threejs/shader/js/banner.js"></script>
 
 
-              <script src="js/vendor/bootstrap.min.js"></script>
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">PENTAGOD</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div id="carousel-pentagod" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-pentagod" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-pentagod" data-slide-to="1"></li>
+                        <li data-target="#carousel-pentagod" data-slide-to="2"></li>
+                      </ol>
 
-              <script src="js/main.js"></script>
-            </body>
-            </html>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="https://img.itch.io/aW1hZ2UvMTAxNjYwLzQ3NDQ1Mi5wbmc=/347x500/iI7Usn.png" alt="">
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="https://img.itch.io/aW1hZ2UvMTAxNjYwLzQ3NDQyNS5wbmc=/347x500/SE6cwm.png" alt="">
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="https://img.itch.io/aW1hZ2UvMTAxNjYwLzQ3NDQ1NC5wbmc=/347x500/SMMbUo.png" alt="">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#carousel-pentagod" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel-pentagod" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </div> <!-- Carousel -->
+                    <p>2016. Game. Personal work. </p>
+                    <p>
+                      PENTAGOD is a battle arena game inspired by dodgeball and featuring PONG physics. In this fantasy world inhabited by 2D shapes, the only being who is not a square, the Pentagod, organizes a battle to death among the poor square villagers of his kingdom. He takes great pleasure at watching the squares being slayed by a high velocity ball that gets thrown around in the arena. The only way to survive the battle is to perfect your jumping and aiming skills. Hit the ball towards you enemies when it's white, dodge it when it's not your color. May the winner live, hopefully. I did all the programming in this project, including player selection menus. This is a collaborative project.
+                    </p>
+
+                    <p class="game-details">
+                      <span class="icon-users"></span> 4 Players<br/>
+                      <span class="icon-gamepad"></span> Gamepad support
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="modal fade" id="juncturemodal" role="dialog">
+              <div class="modal-dialog">
+
+
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Juncture</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div id="carousel-juncture" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-juncture" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-juncture" data-slide-to="1"></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <div class='gfyitem' data-autoplay=true data-id='FlakyMadFrogmouth'></div>
+                        </div>
+                        <div class="item">
+                          <div class='gfyitem' data-autoplay=true data-id='FlawedAgedGalapagosmockingbird'></div>
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#carousel-juncture" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel-juncture" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </div> <!-- Carousel -->
+                    <p>2017. Game. Ubisoft Game Lab Competition. Collaborative.
+                    </p>
+                    <p>
+                      Juncture is a time-bending game about being friends and pulling off the ultimate heist. Two players try to inflitrate a manor. One player plays a first person stealth game while the other helps him around on a computer screen hacking doors, lasers and guards.
+                    </p>
+
+                    <p class="game-details">
+                      <span class="icon-users"></span> 2 Players<br/>
+                      <span class="icon-network"></span> Online <br/>
+                      <span class="icon-gamepad"></span> Gamepad support
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+
+            <script src="threejs/shader/js/stats.js"></script>
+            <script src="threejs/shader/js/BannerShader.js"></script>
+            <script src="threejs/shader/js/banner.js"></script>
+            <!-- <script type='text/javascript'>
+            var Module = {
+            TOTAL_MEMORY: 268435456,
+            errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+            compatibilitycheck: null,
+            backgroundColor: "#222C36",
+            splashStyle: "Light",
+            dataUrl: "Release/WebGL.data",
+            codeUrl: "Release/WebGL.js",
+            asmUrl: "Release/WebGL.asm.js",
+            memUrl: "Release/WebGL.mem",
+          };
+        </script>
+        <script src="Release/UnityLoader.js"></script> -->
+
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+      </body>
+      </html>
