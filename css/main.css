@@ -26,3 +26,7 @@ p {
 .carousel-inner > .item > img {
     margin: 0 auto;
 }
+
+.portfolio{
+  margin-top: 45px;
+}

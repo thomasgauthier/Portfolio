@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?6clhbv');
-  src:  url('fonts/icomoon.eot?6clhbv#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?6clhbv') format('truetype'),
-    url('fonts/icomoon.woff?6clhbv') format('woff'),
-    url('fonts/icomoon.svg?6clhbv#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?bhnfcm');
+  src:  url('fonts/icomoon.eot?bhnfcm#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?bhnfcm') format('truetype'),
+    url('fonts/icomoon.woff?bhnfcm') format('woff'),
+    url('fonts/icomoon.svg?bhnfcm#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,6 +34,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-hashtag:before {
+  content: "\e90b";
+}
 .icon-facebook-official:before {
   content: "\e905";
 }
@@ -42,6 +45,21 @@
 }
 .icon-users:before {
   content: "\e900";
+}
+.icon-stmicro:before {
+  content: "\e90c";
+}
+.icon-raspberrypi:before {
+  content: "\e90d";
+}
+.icon-arduino:before {
+  content: "\e90e";
+}
+.icon-mongodb:before {
+  content: "\e90a";
+}
+.icon-nodejs:before {
+  content: "\e909";
 }
 .icon-unity:before {
   content: "\e908";

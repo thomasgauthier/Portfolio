@@ -17,17 +17,6 @@
     overflow-y: scroll;
   }
 
-  #montagne{
-    position: absolute;
-    top: 2105px;
-    width: 100%;
-    background-image: url("img/montagne.png");
-    height: 520px;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-  }
-
   body {
     color : black;
     /*padding-top: 50px;*/
@@ -171,7 +160,7 @@
           <link rel="stylesheet" href="css/main.css">
           <link rel="stylesheet" href="css/please-wait.css">
           <link rel="stylesheet" href="css/apercu.css" type="text/css" charset="utf-8" />
-          <link rel="stylesheet" href="https://i.icomoon.io/public/temp/db429ea81b/UntitledProject/style.css">
+          <link rel="stylesheet" href="fonts/icomoon/style.css" type="text/css" charset="utf-8" />
           <script src="js/shapes-polyfill.js"></script>
           <script src="js/please-wait.js"></script>
           <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -219,7 +208,8 @@
 
           <!-- <canvas class="emscripten center-block" id="canvas" oncontextmenu="event.preventDefault()" height="540px" width="960px"></canvas> -->
           <div id="banner" style="width:100%;"></div>
-          <div id="montagne"></div>
+          <img src="img/montagne.png" style="width:100%; position: absolute; top:0;"/>
+          <!-- <div id="montagne"></div> -->
 
           <br/>
           <div class="container portfolio">
@@ -237,7 +227,7 @@
                   <!-- <div class='gfyitem' data-autoplay=true data-id='InsidiousAnimatedBee'></div> -->
                   <div class="img-overlay">
 
-                    <img class="img-responsive" src="https://fat.gfycat.com/InsidiousAnimatedBee.gif" alt="">
+                    <img class="img-responsive" src="img/juncture.gif" alt="">
                     <div class="caption">
                       <div class="caption-text">
                         <span class="icon-gamepad"></span> Game <br/>
@@ -272,9 +262,8 @@
                 <h4>
                   <a data-toggle="modal" href="#twitchmodal">Twitch Plays Tamagotchi</a> <br/>
                   <!-- <span class="icon-sphere"></span> Social Experiment <br/> -->
-                  <span class="icon-microcontrollers"></span> Arduino <br/>
-                  <span class="icon-nodejs"></span> Node.js <br/>
-                  <span class="icon-hashtag"></span> IRC
+                  <span class="icon-arduino"></span> Arduino <br/>
+                  <span class="icon-nodejs"></span> Node.js
                 </h4>
               </div>
 
@@ -294,8 +283,8 @@
                 <h4>
                   <a data-toggle="modal" href="#parcademodal">PARCADE</a> <br/>
                   <!-- <span class="icon-graffitti"></span> Urban Art <br/> -->
-                  <span class="icon-microcontrollers"></span> STM32 <br/>
-                  <span class="icon-microcontrollers"></span> Raspberry Pi
+                  <span class="icon-stmicro"></span> STM32 <br/>
+                  <span class="icon-raspberrypi"></span> Raspberry Pi
                 </h4>
               </div>
             </div>
@@ -528,6 +517,8 @@
   <p><a href="mailto:thomas@badbauds.io">
     thomas@badbauds.io</a>
   </p>
+  <p><a href="cv.pdf">CV</a></p>
+
 
 </footer>
 
@@ -542,18 +533,106 @@
         <h4 class="modal-title">PARCADE</h4>
       </div>
       <div class="modal-body">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/sJuBZPaWy2U" frameborder="0" allowfullscreen></iframe>
-        <p>
-          2015. Installation game. Personal work. Collaborative.
-        </p>
-        <p>PARCADE is a transposition of the classic game PONG onto the cityscape. Instead of controlling the game with the traditional PONG controllers, players control the game with seesaws! Two seesaws are placed in front of a projection of the game and control the two paddles, the position of each paddle is mapped to the angle of the seesaws. The two­ player game is then transformed into a four­ player game, 2 vs 2. To win, players have no choice but to cooperate. This a collaborative project made with my brother, he designed the seesaws and did all the hardware. I programmed both the pong game and the microcontrollers in the seesaws.
-        </p>
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#parcade-presentation">Presentation</a></li>
+          <li><a data-toggle="tab" href="#parcade-development">Development</a></li>
+        </ul>
 
-        <h3>Technologies</h3>
-        <p class="game-details">
-          <span class="icon-Raspberry_Pi_Logo"></span> Raspberry Pi<br/>
-          <span class="icon-STMicroelectronics"></span> STM32 f3 <br/>
+        <div class="tab-content">
+          <div id="parcade-presentation" class="tab-pane fade in active">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sJuBZPaWy2U" frameborder="0" allowfullscreen></iframe>
+            <p>
+              2015. Installation game. Personal work. Collaborative.
+            </p>
+            <p>PARCADE is a transposition of the classic game PONG onto the cityscape. Instead of controlling the game with the traditional PONG controllers, players control the game with seesaws! Two seesaws are placed in front of a projection of the game and control the two paddles, the position of each paddle is mapped to the angle of the seesaws. The two­ player game is then transformed into a four­ player game, 2 vs 2. To win, players have no choice but to cooperate. This a collaborative project made with my brother, he designed the seesaws and did all the hardware. I programmed both the pong game and the microcontrollers in the seesaws.
+            </p>
+
+            <h3>Technologies</h3>
+            <p class="game-details">
+              <span class="icon-raspberrypi"></span> Raspberry Pi<br/>
+              <span class="icon-stmicro"></span> STM32 f3 <br/>
+            </p>
+          </div>
+          <div id="parcade-development" class="tab-pane fade">
+
+            <h1>Prototyping</h1>
+            <!-- <div class="sketchfab-embed-wrapper"><iframe style="width:100%;" src="https://sketchfab.com/models/52a8e5a4234540db9d4de32f84526b5d/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+
+            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+            <a href="https://sketchfab.com/models/52a8e5a4234540db9d4de32f84526b5d?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">PARCADE</a>
+            by <a href="https://sketchfab.com/thomasgc?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">thomasgc</a>
+            on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+          </p>
+        </div> -->
+
+        <p>
+          After a couple minutes of brainstorming we had an idea : what if you could play PONG with seesaws?
+
+          We needed to know, so I started coding something quickly and the next day we were in the park with a smartphone and some Duct tape! Using the accelerometers in a smartphone and a wifi hotspot, we could send the seesaw angle to a game of pong running on a laptop.
+
+          <br/><br/>
+          Here's is a video we put together of the first prototype :
         </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EL5yApDRIwo" frameborder="0" allowfullscreen></iframe>
+
+        <br/>
+        <p>
+          A few weeks later we started the design and construction of the seesaws in my parent's backyard.
+
+
+          <div id="carousel-parcade-construction" class="carousel slide" data-interval="8000" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-parcade-construction" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-parcade-construction" data-slide-to="1"></li>
+              <li data-target="#carousel-parcade-construction" data-slide-to="2"></li>
+              <li data-target="#carousel-parcade-construction" data-slide-to="2"></li>
+              <li data-target="#carousel-parcade-construction" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+              <div class="item active">
+                <video class="img-responsive" autoplay muted loop>
+                  <source src="img/parcadeconstruction/video.mp4" type="video/mp4">
+                    <source src="img/parcadeconstruction/video.webm" type="video/webm">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div class="item">
+                    <img class="img-responsive" src="img/parcadeconstruction/1.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img class="img-responsive" src="img/parcadeconstruction/2.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img class="img-responsive" src="img/parcadeconstruction/3.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img class="img-responsive" src="img/parcadeconstruction/4.jpg" alt="">
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-parcade-construction" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-parcade-construction" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div> <!-- Carousel -->
+
+
+            </p>
+          </div>
+        </div>
+
+        <!-- sdajdhasahjsd3 -->
+
+
+
+        <!-- shjadsjhdsagjgh -->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -587,6 +666,8 @@
         <p class="game-details">
           <span class="icon-html5"></span> WebGL <br/>
           <span class="icon-facebook-official"></span> Facebook API <br/>
+          <span class="icon-nodejs"></span> Node.js <br/>
+          <span class="icon-mongodb"></span> MongoDB
         </p>
       </div>
       <div class="modal-footer">
@@ -647,7 +728,8 @@
 
         <h3>Technologies</h3>
         <p class="game-details">
-          <span class="icon-arduinosvg"></span> Arduino <br/>
+          <span class="icon-arduino"></span> Arduino <br/>
+          <span class="icon-nodejs"></span> Node.js
         </p>
       </div>
       <div class="modal-footer">
