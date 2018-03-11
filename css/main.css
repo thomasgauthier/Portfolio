@@ -1,9 +1,23 @@
 
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+Author's custom styles
+========================================================================== */
+html{
+  font-size: 75%;
+}
 
+body{
+  background-color: #E5E5E5;
+  font-size: 1.25rem;
+}
+
+section {
+  margin-top: 5rem;
+  width: 75%;
+  margin: 5rem auto 0 auto;
+
+}
 
 h1, h2, h3, h4, h5, h6{
   font-family: 'apercu', sans-serif;
@@ -24,9 +38,126 @@ p {
 }
 
 .carousel-inner > .item > img {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .portfolio{
   margin-top: 45px;
+}
+
+.img-overlay {
+  width: 262.5px;
+  height: 175px;
+  position: relative;
+}
+
+.caption{
+  cursor: pointer;
+  position: absolute;
+  top:0;
+  height:100%;
+  width : 100%;
+  background-color: rgba(0,0,0,0.65);
+  opacity: 0;
+  -webkit-transition:all 0.45s ease-in-out;
+  -moz-transition:all 0.45s ease-in-out;
+  -o-transition:all 0.45s ease-in-out;
+  -ms-transition:all 0.45s ease-in-out;
+  transition:all 0.45s ease-in-out;
+}
+.caption:hover{
+  opacity: 1;
+}
+.caption-text{
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.section-title{
+  /* margin-left: 4%; */
+}
+
+.floating-img {
+  float: left;
+  margin: 10px 10px 0 0;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
+}
+
+#contact-bar{
+  width: 30%;
+  margin-right: 0;
+}
+
+#img-me{
+  max-width: 50%;
+  height: auto;
+}
+
+.carousel-control-prev{
+  background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+  background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+  background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
+  background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+
+.carousel-control-next{
+  right: 0;
+  left: auto;
+  background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+  background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+  background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+  background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+
+
+.modal-dialog{
+  position: relative;
+  display: table; /* This is important */
+  overflow-y: auto;
+  overflow-x: auto;
+  width: auto;
+  min-width: 300px;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tab-content{
+  margin-top: 1rem;
+}
+
+#projects{
+  margin-top: 4rem;
+}
+
+/* lg */
+@media (min-width: 992px) {
+  #projects{
+    margin-top: 9rem;
+  }
 }

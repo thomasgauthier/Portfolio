@@ -1,6 +1,6 @@
 // if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
-var container, stats;
+var container;
 
 var camera, scene, renderer, bufferScene, bufferTexture;
 
@@ -13,13 +13,10 @@ var mouse = new THREE.Vector2();
 init();
 animate();
 
-var stats;
-
 
 function init() {
 
   container = document.getElementById( 'banner' );
-  stats = new Stats();
 
   camera = new THREE.OrthographicCamera( -1, 1, 1, -1, 1, 1000 );
   camera.position.z = 1;
@@ -54,8 +51,6 @@ function init() {
 
   container.appendChild( renderer.domElement );
 
-  // stats = new Stats();
-  // container.appendChild( stats.dom );
 
   onWindowResize();
 
@@ -128,13 +123,9 @@ function onWindowResize( event ) {
 //
 function animate() {
 
-	// stats.begin();
 
   render();
 
-  // stats.end();
-
-  // console.log(stats.getFPS())
   requestAnimationFrame( animate );
 
 }
