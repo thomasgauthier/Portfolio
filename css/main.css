@@ -79,6 +79,16 @@ p {
   font-size: 24px;
 }
 
+.carousel-caption {
+  /* position: absolute;
+  top: 50%;
+  transform: translateY(-50%); */
+}
+
+.carousel-caption h3{
+  background-color: rgba(120,120,120,0.6);
+}
+
 .section-title{
   /* margin-left: 4%; */
 }
