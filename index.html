@@ -119,8 +119,6 @@
           <div class="d-inline-block ">
 
             <a data-toggle="modal" href="#juncturemodal">
-              <!-- <img class="img-fluid " src="img/sheep.png" alt=""> -->
-              <!-- <div class='gfyitem' data-autoplay=true data-id='InsidiousAnimatedBee'></div> -->
               <div class="img-overlay">
 
                 <img class="img-fluid " src="img/juncture.gif" alt="">
@@ -554,27 +552,35 @@
           </button>
         </div>
         <div class="modal-body">
-          <div id="carousel-twitchplays" class="carousel slide" data-ride="carousel">
+          <div id="carousel-twitchplays" class="carousel slide" data-ride="carousel" data-interval="15000">
             <!-- Indicators -->
             <ol class="carousel-indicators">
               <li data-target="#carousel-twitchplays" data-slide-to="0" class="active"></li>
               <li data-target="#carousel-twitchplays" data-slide-to="1"></li>
               <li data-target="#carousel-twitchplays" data-slide-to="2"></li>
             </ol>
-
+  
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class='gfyitem' data-autoplay=true data-id='NippyDefiantHind'></div>
+                <video class="lazy img-fluid" autoplay="" muted="" loop="" playsinline="" poster="videos/juncture1.jpg">
+                  <source  data-src="videos/twitch1.mp4" type="video/mp4"/>
+                  <source  data-src="videos/twitch1.webm" type="video/webm"/>
+                  Your browser does not support the video tag.
+                </video>
               </div>
               <div class="carousel-item">
-                <div class='gfyitem' data-autoplay=true data-id='TightPersonalKillifish'></div>
+                <video class="lazy img-fluid" autoplay="" muted="" loop="" playsinline="" poster="videos/juncture2.jpg">
+                  <source  data-src="videos/twitch2.mp4" type="video/mp4"/>
+                  <source  data-src="videos/twitch2.webm" type="video/webm"/>
+                  Your browser does not support the video tag.
+                </video>
               </div>
               <div class="carousel-item">
                 <img class="img-fluid" src="img/twitchfinger.jpg" alt="...">
               </div>
             </div>
-
+  
             <!-- Controls -->
             <a class="carousel-control-prev" href="#carousel-twitchplays" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
